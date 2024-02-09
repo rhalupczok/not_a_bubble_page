@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.c-content-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+.navbvar--bg {
+    background-color: #d3291d;
+    box-shadow: 0 0 2px 0 black;
+}
+
+.navbar__content {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0 50px;
+    text-decoration: none;
+}
+.navbar__list {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.5s;
+}
+
+.navbar__item {
+    margin: 10px;
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar__item--link {
+    margin-right: auto;
+}
+
+.navbar__button {
+    display: none;
+    margin: auto 0;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header {
+    height: 500px;
+    background-color: #fc2e20;
+    background-image: url("./images/background2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header__content {
+    padding: 130px 50px;
+}
+
+.header__title {
+    margin: 0;
+    color: white;
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.header__description {
+    max-width: 400px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.header__button {
+    width: 200px;
+    height: 50px;
+    margin-top: 60px;
+    background-color: greenyellow;
+    border: none;
+    font-weight: 700;
+}
+
+.what-is-pop {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+}
+
+.what-is-pop__description {
+    max-width: 600px;
+    margin: 0;
+}
+
+.pop-it-options {
+    background-color: yellowgreen;
+}
+.pop-it-options__content {
+    padding: 60px;
+}
+
+.pop-it-options__header {
+    text-align: center;
+}
+
+.pop-it-options__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pop-it-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.pop-it-option__image {
+    height: 120px;
+}
+
+.pop-it-option__description {
+    padding: 5x 0;
+    font-weight: 700;
+}
+
+.pop-it-option__button {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    font-weight: 700;
+}
+
+.game-rules {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1;
+    gap: 50px;
+    padding: 50px;
+    background-image: url(./images/bg-grid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.game-rules__description {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-rules__image {
+    grid-column: 2;
+    width: 100%;
+    margin: auto;
+}
+
+.footer {
+    background-color: rgb(82, 82, 82);
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer__link {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 868px) {
+    .header__title {
+        font-size: 4em;
+    }
+    .header__description {
+        max-width: 40%;
+
+        font-size: 1em;
+    }
+    .navbar__content {
+        padding: 0 20px;
+    }
+    .navbar__list {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 15px;
+        margin: 40px 0 0 0;
+        padding: 5px 0;
+        flex-direction: column;
+        gap: 5px;
+        text-align: right;
+    }
+    .navbar__list--isShow {
+        display: flex;
+        backdrop-filter: blur(5px);
+    }
+
+    .navbar__button {
+        display: block;
+    }
+
+    .game-rules {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__button {
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+    }
+    .pop-it-options__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .game-rules {
+        display: block;
+    }
+}
