@@ -99,6 +99,11 @@ body {
     background-color: greenyellow;
     border: none;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    background-color: #82c223;
 }
 
 .what-is-pop {
@@ -155,6 +160,11 @@ body {
     background-color: orange;
     border: none;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.pop-it-option__button:hover {
+    background-color: #ca8300;
 }
 
 .game-rules {
